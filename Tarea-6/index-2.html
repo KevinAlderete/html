@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla 2</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        table{
+            font-size: sans-serif;
+            border: 5px solid burlywood;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 0 auto 0 auto;
+            margin-top: 10rem;
+            color: white;
+        }
+        th,td {
+            border: 5px solid burlywood;
+            padding: 0.5rem;
+            background-color: lightgreen;
+        }
+        tr:nth-child(1) td:nth-child(1) {
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="3" rowspan="2">span 5</td>
+                <td colspan="2" rowspan="2">span 3</td>
+                <td>span 2</td>
+                <td rowspan="2">span 2</td>
+            </tr>
+            <tr>
+                <td>span2</td>
+            </tr>
+            <tr>
+                <td colspan="3">span 6</td>
+                <td colspan="4" rowspan="2">span 6</td>
+            </tr>
+            <tr>
+                <td colspan="3">span 6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
